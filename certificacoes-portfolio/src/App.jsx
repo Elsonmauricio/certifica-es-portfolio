@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import CertificationCard from './components/CertificationCard';
-import { certifications } from './data/certifications';
+import { certifications } from './data/Certifications';
 
 function App() {
   return (
