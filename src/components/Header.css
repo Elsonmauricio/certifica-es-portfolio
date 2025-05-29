@@ -14,3 +14,17 @@
   margin: 0.5rem 0 0;
   opacity: 0.9;
 }
+.main-nav {
+  margin-top: 1.5rem;
+}
+
+.main-nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.main-nav a:hover {
+  opacity: 0.8;
+}
