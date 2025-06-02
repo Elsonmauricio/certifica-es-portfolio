@@ -1,32 +1,124 @@
 .about-section {
   padding: 4rem 2rem;
-  background-color: #ffffff;
+  background: linear-gradient(to right, #1f1f1f, #2c3e50);
   margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
 }
 
 .about-content {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+  color: #ffffff;
+  flex: 1 1 300px;
 }
 
 .about-content h2 {
   text-align: center;
-  color: #2c3e50;
+  font-size: 2rem;
   margin-bottom: 1.5rem;
+  color: #ffffff;
+  position: relative;
+}
+
+.about-content h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 0.5rem auto 0;
+  background-color: #3498db;
 }
 
 .about-content p {
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 1.05rem;
   margin-bottom: 1.5rem;
+  color: #ecf0f1;
 }
 
 .personal-info {
-  background: white;
+  background: rgba(255, 255, 255, 0.05);
   padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffffff1a;
 }
 
 .personal-info p {
   margin: 0.5rem 0;
+  color: #bdc3c7;
+  font-size: 0.95rem;
+}
+
+/* Imagem */
+.about-section .profile {
+  flex: 0 1 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile .image-box {
+  background: linear-gradient(135deg, #608ded 0%, #2c3e50 100%);
+  border-radius: 50%;
+  width: 260px;
+  height: 260px;
+  box-shadow: 0 8px 32px rgba(96, 141, 237, 0.15), 0 2px 8px rgba(44, 62, 80, 0.1);
+  border: 6px solid #fff;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.profile .image-box:hover {
+  box-shadow: 0 16px 40px rgba(96, 141, 237, 0.25), 0 4px 16px rgba(44, 62, 80, 0.15);
+  transform: scale(1.05);
+}
+
+.profile .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-content h2::after {
+    margin: 0.5rem auto;
+  }
+
+  .personal-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile .image-box {
+    width: 180px;
+    height: 180px;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .personal-info p {
+    font-size: 0.9rem;
+  }
 }

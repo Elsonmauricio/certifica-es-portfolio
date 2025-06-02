@@ -5,7 +5,7 @@ import './SkillsSection.css';
 const SkillsSection = () => {
   const skills = [
   { name: 'React', image: '/react.svg' },
-  { name: 'JavaScript', image: '/javascript.svg' },
+  { name: 'Java', image: '/java.svg' },
   { name: 'CSS', image: '/css3.svg' },
   { name: 'HTML', image: '/html5.svg' },
   { name: 'Python', image: '/Python.png' },

@@ -1,0 +1,140 @@
+.contact {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #1f1f1f, #2c3e50);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact .title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  border-bottom: 2px solid #608ded;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.contact .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  background: #ffffff0a;
+  border: 2px solid #ffffff22;
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+.contact-form .input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.contact-form .input input {
+  flex: 1 1 48%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #608ded;
+  background-color: #ffffff05;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-form .input input:focus {
+  outline: none;
+  border-color: #fff;
+  background-color: #ffffff10;
+}
+
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  height: 200px;
+  border: 2px solid #608ded;
+  background-color: #ffffff05;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  resize: none;
+  transition: all 0.3s ease;
+}
+
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #fff;
+  background-color: #ffffff10;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  align-self: flex-end;
+  padding: 0.75rem 2rem;
+  background-color: #608ded;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #4a70c8;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contact-form .input {
+    flex-direction: column;
+  }
+
+  .contact-form .input input {
+    flex: 1 1 100%;
+  }
+
+  .contact .title {
+    font-size: 2rem;
+  }
+
+  .contact-form button {
+    width: 100%;
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 2rem 1rem;
+  }
+
+  .contact .title {
+    font-size: 1.8rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .contact-form textarea {
+    height: 150px;
+  }
+}

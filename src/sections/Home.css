@@ -1,0 +1,82 @@
+.home {
+  background: linear-gradient(to right, #1f1f1f, #2c3e50);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; /* evita corte em telas pequenas */
+  box-sizing: border-box;
+}
+
+.home .container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* aumenta espaçamento para evitar sobreposição */
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* SVG com texto grande e responsivo */
+.home .container .content svg {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  margin-bottom: 1rem; /* espaçamento abaixo */
+  overflow: visible;
+}
+
+/* Texto SVG estilizado */
+.home .container .content svg text {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: clamp(64px, 10vw, 132px); /* responsivo com mínimo e máximo */
+  fill: none; /* sem preenchimento */
+  stroke: #ffffff; /* cor do traçado */
+  stroke-width: 2;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: stroke 5s infinite alternate;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+
+/* Animação que "desenha" o texto */
+@keyframes stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Título abaixo do SVG */
+.home .container .content h1 {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.2rem); /* responsivo */
+  font-weight: 500;
+  line-height: 1.4;
+  width: 90%;
+  max-width: 700px;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.home .container .content h1 span {
+  background: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+/* Para telas muito pequenas ajustar margens e tamanho */
+@media (max-width: 480px) {
+  .home .container .content svg {
+    max-height: 200px;
+    margin-bottom: 0.5rem;
+  }
+  .home .container .content h1 {
+    font-size: 1.25rem;
+    width: 95%;
+  }
+}
