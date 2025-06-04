@@ -1,7 +1,6 @@
 import React from 'react';
 import './SkillsSection.css';
 
-
 const SkillsSection = () => {
   const skills = [
   { name: 'React', image: '/react.svg' },
@@ -10,10 +9,10 @@ const SkillsSection = () => {
   { name: 'HTML', image: '/html5.svg' },
   { name: 'Python', image: '/Python.png' },
   { name: 'Github', image : '/github.svg'},
-  { name: 'MySQL',image:'mysql.svg'},
   { name:'Typescript',image:'typescript.svg'},
+  { name: 'JavaScript', image: '/javascript.svg' },
+  { name: 'MySQL',image:'mysql.svg'},
 ];
-
 
   return (
     <section className="skills-section" id="habilidades">
