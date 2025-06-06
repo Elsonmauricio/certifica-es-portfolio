@@ -33,6 +33,14 @@ export const certifications = [
   },
   {
     id: 5,
+    title: 'AWS Educate Getting Started with Serverless',
+    issuer: 'Amazon Web Services Training and Certification',
+    date: '4/junho/2025',
+    image: '/aws-educate-getting-started-with-serverless.png',
+    link: 'https://www.credly.com/badges/02a46a2c-3769-4557-aea6-3bf4ce0c4086/public_url'
+  },
+  {
+    id: 6,
     title: 'Lifelong Learning',
     issuer: 'Certiprof',
     date: '5/Agosto/2024',

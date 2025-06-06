@@ -1,16 +1,16 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import CertificationCard from './components/CertificationCard';
-import AboutSection from './sections/AboutSection';
-import Home from './sections/Home.jsx'
-import SkillsSection from './sections/SkillsSection.jsx';
-import AnimationWrapper from './components/AnimationWrapper';
-import { certifications } from './data/Certifications';
+import Header from './components/Header.tsx';
+import Footer from './components/Footer.tsx';
+import CertificationCard from './components/CertificationCard.tsx';
+import AboutSection from './sections/AboutSection.tsx';
+import Home from './sections/Home.tsx'
+import SkillsSection from './sections/SkillsSection.tsx';
+import AnimationWrapper from './components/AnimationWrapper.tsx';
+import { certifications } from './data/Certifications.tsx';
 import AOS from 'aos';
 import 'aos/dist/aos.css';// No topo do seu App.jsx ou index.jsx
-import Contato from './sections/Contacto.jsx';
+import Contato from './sections/Contacto.tsx';
 
 import { useEffect } from 'react';
 
