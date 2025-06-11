@@ -41,6 +41,22 @@ export const certifications = [
   },
   {
     id: 6,
+    title: 'AWS Educate Getting Started with Databases',
+    issuer: 'Amazon Web Services Training and Certification',
+    date: '6/junho/2025',
+    image: 'aws-educate-getting-started-with-databases.png',
+    link: 'https://www.credly.com/badges/d3e4c1f0-2217-4294-9c6f-72d66191653a/public_url'
+  },
+   {
+    id: 7,
+    title: 'AWS Educate Getting Started with Storage',
+    issuer: 'Amazon Web Services Training and Certification',
+    date: '11/junho/2025',
+    image: 'aws-educate-getting-started-with-storage.png',
+    link: 'https://www.credly.com/badges/3c0339d7-4da5-43c6-bc7f-c37085272dba/public_url'
+  },
+  {
+    id: 8,
     title: 'Lifelong Learning',
     issuer: 'Certiprof',
     date: '5/Agosto/2024',
