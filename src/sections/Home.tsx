@@ -5,7 +5,7 @@ import './Home.css';
 
 function Home() {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 1200, once: true });
   }, []);
 
   return (

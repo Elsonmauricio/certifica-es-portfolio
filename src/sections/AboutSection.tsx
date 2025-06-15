@@ -13,10 +13,10 @@ const AboutSection = () => {
       <div className="about-content">
         <h2>Sobre Mim</h2>
         <p>
-          Sou um profissional apaixonado por tecnologia e aprendizado contínuo.
-          Este portfólio mostra minhas certificações e habilidades adquiridas
+          Um profissional apaixonado por tecnologia e aprendizado contínuo.
+          Este portfólio mostra minhas certificações, projetos e habilidades adquiridas
           através de muito estudo e dedicação.<br></br>
-          Sou um desenvolvedor apaixonado por tecnologia e resolução de
+          Um desenvolvedor que ama o que faz por tecnologia e resolução de
           problemas desenvolvo soluções eficientes e escaláveis para desafios
           reais. Busco sempre inovar e aprimorar minhas habilidades, criando
           projetos que impactam positivamente usuários e negócios.

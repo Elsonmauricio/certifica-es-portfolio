@@ -24,6 +24,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Aplicação */
 .App {
   background: linear-gradient(to right, #1f1f1f, #2c3e50);
