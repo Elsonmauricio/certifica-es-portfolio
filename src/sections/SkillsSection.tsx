@@ -70,6 +70,7 @@ const SkillsSection = () => {
     { name: 'Python', image: '/python.png' },
     { name: 'Github', image: '/github.svg' },
     { name: 'AWS', image: '/aws.svg' },
+    { name: 'Elixir', image: '/Elixir-phoenix.svg' },
     { name: 'Typescript', image: 'typescript.svg' },
     { name: 'JavaScript', image: '/javascript.svg' },
     { name: 'MySQL', image: '/mysql.svg' },
